@@ -1,0 +1,59 @@
+baseURL = "/"
+languageCode = "en-us"
+theme = "hermit"
+title = "NetSandbox"
+
+enableRobotsTXT = true
+pygmentsCodefences = true
+pygmentsUseClasses = true
+
+[author]
+  name = "Christian Loos"
+
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  description = "Christian Loos - Infrastructure Engineer"
+  homeSubtitle = "Christian Loos - Infrastructure Engineer"
+
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+[[params.social]]
+  name = "email"
+  url = "mailto:cloos@netsandbox.de"
+[[params.social]]
+  name = "github"
+  url = "https://github.com/cloos/"
+[[params.social]]
+  name = "twitter"
+  url = "https://twitter.com/netsandbox/"
+# [[params.social]]
+#   name = "xing"
+#   url = "https://www.xing.com/profile/Christian_Loos7/"
+[[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/christian-loos/"
+
+[menu]
+
+[[menu.main]]
+  name = "Blog"
+  url  = "/posts/"
+  weight = 1
+[[menu.main]]
+  name = "Projects"
+  url = "/projects/"
+  weight = 2
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
