@@ -19,8 +19,8 @@ pygmentsUseClasses = true
   tag = "tags"
 
 [params]
-  description = "Christian Loos - Infrastructure Engineer"
-  homeSubtitle = "Christian Loos - Infrastructure Engineer"
+  description = "Christian Loos - Engineer | Linux System Administrator"
+  homeSubtitle = "Christian Loos - Engineer | Linux System Administrator"
 
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -32,7 +32,7 @@ pygmentsUseClasses = true
   url = "mailto:cloos@netsandbox.de"
 [[params.social]]
   name = "github"
-  url = "https://github.com/cloos/"
+  url = "https://github.com/netsandbox/"
 [[params.social]]
   name = "twitter"
   url = "https://twitter.com/netsandbox/"
