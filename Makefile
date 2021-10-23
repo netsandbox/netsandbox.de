@@ -8,15 +8,15 @@ update-theme: ## update the theme
 
 .PHONY: server
 server: ## start the hugo server with drafts enabled
-	hugo server --buildDrafts
+	docker run --rm -it -v $$(pwd):/src -p 1313:1313 klakegg/hugo:0.83.1 server --buildDrafts
 
 .PHONY: build_test
 build_test: ## build test website
-	hugo --cleanDestinationDir --environment test
+	docker run --rm -it -v $$(pwd):/src -p 1313:1313 klakegg/hugo:0.83.1 --cleanDestinationDir --environment test
 
 .PHONY: build
 build: ## build website
-	hugo --cleanDestinationDir
+	docker run --rm -it -v $$(pwd):/src -p 1313:1313 klakegg/hugo:0.83.1 --cleanDestinationDir
 
 .PHONY: publish_test
 publish_test: build_test ## publish test website
